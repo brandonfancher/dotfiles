@@ -59,3 +59,7 @@ export NVM_DIR="$HOME/.nvm"
 
 source /usr/local/lib/dnx/bin/dnvm.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# react native settings for android
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
