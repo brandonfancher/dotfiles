@@ -56,3 +56,5 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+export PATH="/usr/local/sbin:$PATH"
