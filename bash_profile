@@ -62,3 +62,11 @@ alias cleos-jungle='docker exec -it eosio /opt/eosio/bin/cleos -u http://dev.cry
 # Aliases for showing and hiding hidden files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# Project Directories
+cdw() {
+    cd ~/Projects/Work/$1
+}
+cdp() {
+    cd ~/Projects/Personal/$1
+}
