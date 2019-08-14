@@ -34,6 +34,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+# clean up local git branches except master and develop
+alias clean_branches="git branch | grep -v 'master\|develop' | xargs git branch -D"
+
 # git-completion
 # (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
 if [ -f ~/.gitcompletion ]; then
